@@ -1,0 +1,71 @@
+/* --- Estilo general del cuerpo --- */
+body {
+    font-family: Arial; /* Tipo de letra principal */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Fondo con degradado diagonal */
+    min-height: 100vh; /* La página ocupa toda la altura de la ventana */
+    display: flex; /* Activa el sistema de caja flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin: 0; /* Elimina márgenes predeterminados del navegador */
+}
+
+/* --- Tarjeta central --- */
+.card {
+    background: white; /* Fondo blanco */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3); /* Sombra para darle profundidad */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    max-width: 500px; /* Ancho máximo para que se vea equilibrada */
+}
+
+/* --- Título principal --- */
+h1 {
+    color: #333; /* Color oscuro del texto */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* --- Insignia de progreso --- */
+.badge {
+    background: #667eea; /* Color morado-azul del fondo */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    display: inline-block; /* Mantiene el ancho ajustado al contenido */
+    margin: 10px 0; /* Espacio arriba y abajo */
+}
+
+/* --- Botón principal --- */
+button {
+    background: #667eea; /* Fondo azul-morado */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a "mano" al pasar encima */
+    margin: 10px; /* Separación del resto del contenido */
+}
+
+/* --- Efecto al pasar el mouse sobre el botón --- */
+button:hover {
+    background: #5568d3; /* Cambia ligeramente el tono del color */
+}
+
+/* --- Sección oculta del mensaje --- */
+#mensaje {
+    margin-top: 20px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    background: #f0f0f0; /* Fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    display: none; /* Oculta el mensaje hasta que se active */
+}
+
+#mensaje {
+    transition: all 0.5s ease; /* Transición suave */
+    opacity: 0; /* Inicialmente invisible */
+}
+#mensaje.visible {
+    display: block;
+    opacity: 1; /* Aparece con efecto suave */
+}
